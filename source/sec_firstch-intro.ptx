@@ -7,7 +7,7 @@
       We can write the book here. Including math using <m>\LaTeX</m>. We can have arbitrarily complicated expressions, which is nice.
     </p>
     <p>
-      And we can include pictures and things.
+      And we can include pictures and things. Look at the source code to see how everything is implemented.
     </p>
     <p>
       I'm leaving the basic information created by the <c>pretext new book</c> available in <xref ref="ch_pretext-features"/> for your review. This section will explore examples that I'm showing off in my presentation.
@@ -15,14 +15,25 @@
   </introduction>
   <subsection xml:id="subsec-basic-features">
     <title>Basic Features</title>
+
+    <definition>
+      <statement>
+        <p>
+          <term>Open educational resources (OER)</term>, according to <url href="https://en.unesco.org/themes/building-knowledge-societies/oer">UNESCO</url>, <q>are teaching, learning and research materials in any medium – digital or otherwise – that reside in the public domain or have been released under an open license that permits no-cost access, use, adaptation and redistribution by others with no or limited restrictions.</q> That is, OER include built in permission to retain, reuse, revise, remix, and redistribute the material.
+        </p>
+        <p>
+          This definition comes from the <url href="https://www.kansasregents.org/academic_affairs/open-educational-resources/oer-conference">KBOR OER Summit webpage</url>.
+        </p>
+      </statement>
+    </definition>
     <p>
-      We can include information in a paragraph, and the paragraph can show itemized lists:
+      We can include information in a paragraph, and the paragraph can show itemized (unordered) lists <c>ul</c>:
       <ul>
         <li> Item 1 </li>
         <li> Item 2 </li>
         <li> Item 3 </li>
       </ul>
-      or even numbered lists
+      or even numbered (ordered) lists <c>ol</c>:
       <ol>
         <li> Thing 1</li>
         <li> Thing 2 </li>
@@ -63,7 +74,7 @@
     <example>
       <statement>
         <p>
-          How do you put an elephant in a refridgerator?
+          How do you put an elephant in a refrigerator?
         </p>
       </statement>
       <solution>
@@ -76,7 +87,7 @@
     <example>
       <statement>
         <p>
-          How do you put a giraffe in the refridgerator?
+          How do you put a giraffe in the refrigerator?
         </p>
       </statement>
       <hint>
@@ -84,7 +95,7 @@
       </hint>
       <solution>
         <p>
-          You open the door, take out the elephant, and put the giraffe in the refridgerator.
+          You open the door, take out the elephant, and put the giraffe in the refrigerator.
         </p>
       </solution>
     </example>
@@ -114,6 +125,21 @@
         </p>
       </aside>
     </p>
+
+    <p>
+      And no math book would be complete without some <c>theorem</c>-like statement.
+    </p>
+    <theorem>
+      <title>Fermat's Last Theorem</title>
+      <statement>
+        <p>
+          Let <m>x, y, z \in \Z</m>. There are no solutions to <m>x^n + y+n = z^n</m> for any integer <m>n\ge 3</m>
+        </p>
+      </statement>
+      <proof>
+        There isn't enough room in this code block for my clever proof.
+      </proof>
+    </theorem>
 
   </subsection>
 
