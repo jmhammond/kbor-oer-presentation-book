@@ -5,9 +5,9 @@
 <!--  settings.                                              -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<!-- The next three lines are likely for mature projects only: -->
 
-<!-- <brandlogo url="" source="images/cover.png"/> -->
+<!-- Note that images need just the name, not the directory prefix! /-->
+<brandlogo url="" source="WSULogo.png" />
 <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
 <!-- <document-id>unique-book-id</document-id> -->
 
@@ -19,6 +19,10 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\def\divides{\mid}
+\def\and{\text{ and }}
+\def\lcm{\text{lcm}}
+\def\modulus{\mathbin{\%}}
 </macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->

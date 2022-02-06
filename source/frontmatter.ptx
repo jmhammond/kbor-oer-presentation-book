@@ -6,16 +6,16 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Us</personname>
-      <department>My department</department>
-      <institution>My school</institution>
+      <personname>John Hammond</personname>
+      <department>Department of Mathematics</department>
+      <institution>Wichita State University</institution>
     </author>
     <date><today/></date>
   </titlepage>
 
   <colophon>
     <website>
-      <name><c>my-website.org</c></name>
+      <name><c>wichita.edu/discretebook</c></name>
       <address>http://my.website.org</address>
     </website>
 
@@ -24,7 +24,7 @@
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
       <year>2020<ndash/>2021</year>
-      <holder>Me</holder>
+      <holder>John Hammond</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
@@ -35,15 +35,9 @@
 
   </colophon>
 
-  <dedication>
-    <p>
-      For ...
-    </p>
-  </dedication>
-
   <acknowledgement>
     <p>
-      I would like to thank...
+      I would like to thank everyone attending the talk and exploring the source. Welcome to writing your own book!
     </p>
 
   </acknowledgement>
@@ -53,6 +47,9 @@
     <!-- Avoid elements that should have a number, for example  -->
     <p>
       About this book:
+    </p>
+    <p>
+      This is the sample book that goes along with my KBOR OER Presentation. The presentation itself will include code snippets, etc, and those are going to be elements that are in this book<ndash/>I need to make sure that the code works, so I might as well share it!
     </p>
 
   </preface>

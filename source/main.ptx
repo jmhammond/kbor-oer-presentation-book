@@ -14,8 +14,8 @@
   <!-- to some short (non-spaced) description of your book         -->
   <book xml:id="my-great-book">
     <!-- The book needs a title and can have a subtitle  -->
-    <title>This is the Book we're making for KBOR OER</title>
-    <subtitle>Live! Woo!</subtitle>
+    <title>Sample Book for PreText Presentation</title>
+    <subtitle>Showing off some features</subtitle>
 
     <!-- Now we include files containing each main devision.       -->
 
