@@ -2,6 +2,10 @@
 
 This is the sample book that I'm including for source examples in my presentation on PreText for the [KBOR OER Conference](https://www.kansasregents.org/academic_affairs/open-educational-resources/oer-conference)
 
+
+A live version of this book is residing (at least temporarily) [on my website](https://hammond.math.wichita.edu/kbor-oer/frontmatter.html). You can access the [generated pdf here as well](https://hammond.math.wichita.edu/kbor-oer/main.pdf).
+
+
 ## Building the Book:
 
 ### HTML 
