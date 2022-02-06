@@ -31,3 +31,9 @@ You can then either open the PDF in your file browser, or use `pretext view pdf`
 ### Additional build options
 
 Explore the [PreText Author Guide documentation](https://pretextbook.org/doc/guide/html/processing-publisher-stringparam.html) to see more options (there's a lot you can do!)
+
+### FYI about the color scheme
+ 
+... by the way, you might have noticed that the color is different than if you built your own sample book. The default color scheme is blue and red, but since I'm from the wheat-based school, I prefer brown and gold (closest to Shocker Colors).
+
+This is controlled in the `publication/publication.ptx` file `css style` tag.
