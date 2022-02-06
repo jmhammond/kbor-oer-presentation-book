@@ -5,11 +5,11 @@
 <chapter xml:id="ch-first" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <!-- Change title when you have one: -->
-  <title>This is the test of teh book</title>
+  <title>Some basic examples</title>
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>If you'r reading this, it's our first experience writing a book. Nice!</p>
+    <p>This chapter introduces some basic examples including the <c>example</c> tag.</p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->

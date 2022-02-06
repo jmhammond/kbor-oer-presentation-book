@@ -9,23 +9,139 @@
     <p>
       And we can include pictures and things.
     </p>
+    <p>
+      I'm leaving the basic information created by the <c>pretext new book</c> available in <xref ref="ch_pretext-features"/> for your review. This section will explore examples that I'm showing off in my presentation.
+    </p>
   </introduction>
-  <subsection xml:id="subsec-a-subsection">
-    <title>A subsection</title>
+  <subsection xml:id="subsec-basic-features">
+    <title>Basic Features</title>
     <p>
-      Content of the subsection.
+      We can include information in a paragraph, and the paragraph can show itemized lists:
+      <ul>
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+      </ul>
+      or even numbered lists
+      <ol>
+        <li> Thing 1</li>
+        <li> Thing 2 </li>
+        <li> Thing 3 </li>
+      </ol>
     </p>
     <p>
-      More content.
+      We can start new paragraphs like this, and then we can include images, in this case, shamelessly showing off my mad crochet skills.
+      <image source="crochet_cthulhu.jpg" width="50%">
+        <description>Showing off a crochet Cthulhu that I made, because it's awesome.</description>
+      </image>
     </p>
+    <p>
+      Want to have two things side-by-side? We can do it with a <c>sidebyside</c> element:
+      <sidebyside width="50%">
+        <program language="python">
+          <input>
+            def fib(n):
+                if n == 0:
+                     return 0
+                elif n == 1:
+                     return 1
+                else:
+                     return fib(n-1) + fib(n-2)
+          </input>
+        </program>
+        <p>
+          Here's a sample python implementation for finding the <m>n</m>th Fibonancci number recursively.  That actually reminds me... We can run it interactively using the <c>sage</c> code blocks. We'll do that in <xref ref="subsec-interactive-computation"/>
+        </p>
+      </sidebyside>
+    </p>
+
+    <p>
+      But you probably want to get to some examples! Let's explore their structure below. After including some place-holder Latin text to make section look a little longer...
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac orci phasellus egestas tellus. Vitae auctor eu augue ut lectus. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. A arcu cursus vitae congue mauris rhoncus. Feugiat scelerisque varius morbi enim nunc faucibus a. Ultricies mi eget mauris pharetra et. Pharetra magna ac placerat vestibulum lectus mauris. Diam quis enim lobortis scelerisque fermentum dui. Quam quisque id diam vel. Quisque non tellus orci ac. Consequat id porta nibh venenatis cras sed felis eget velit. Nulla posuere sollicitudin aliquam ultrices. Mi quis hendrerit dolor magna eget est lorem. Iaculis urna id volutpat lacus laoreet. Vitae elementum curabitur vitae nunc sed velit.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          How do you put an elephant in a refridgerator?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          You open the door, and put the elephant inside.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          How do you put a giraffe in the refridgerator?
+        </p>
+      </statement>
+      <hint>
+        Is the fridge empty?
+      </hint>
+      <solution>
+        <p>
+          You open the door, take out the elephant, and put the giraffe in the refridgerator.
+        </p>
+      </solution>
+    </example>
   </subsection>
 
-  <subsection xml:id="subsec-another-subsection">
-    <title>Another Subsection</title>
+
+  <subsection xml:id="subsec-math-features">
+    <title>Math Features</title>
     <p>
       Text with some math: <m>\sin(x) = \cos(x)</m> only for some values of <m>x</m>.
     </p>
+
+    <p>
+      Math is rendered using MathJax and can accept arbitrarily complex <m>\LaTeX</m> expressions. Here's a gnarly one:
+      <md>
+        <mrow>
+          \left\langle x^{\prime}, t^{\prime} \mid x_{0}, t_{0}\right\rangle \amp;= \lim _{N \rightarrow \infty} \int d x_{1} \cdots \int d x_{N-1} \int \frac{d p_{1}}{2 \pi \hbar} \ldots
+        </mrow>
+        <mrow>
+          \amp; \times \int \frac{d p_{N}}{2 \pi \hbar} \exp \left\{\frac{i}{\hbar} \sum_{i=1}^{N}\left[p_{i} \frac{\left(x_{i}-x_{i-1}\right)}{\Delta t}-E\left(p_{i}, x_{i-1}\right)\right] \Delta t\right\}
+        </mrow>
+      </md>
+      <aside>
+        <title>Yeah, me too.</title>
+        <p>
+          I have no idea what that means, either. But it looks awesome.
+        </p>
+      </aside>
+    </p>
+
   </subsection>
+
+  <subsection xml:id="subsec-interactive-computation">
+    <title>Interactive Computation</title>
+    <p>
+      Using the <c>sage</c> cells, you can embed sage code into your book - this allows you to interactively provide python, maxima, sage, and more for your students to explore live code samples!
+    </p>
+    <p>
+      <sage>
+        <input>
+def fib(n):
+    if n == 0:
+         return 0
+    elif n == 1:
+         return 1
+    else:
+         return fib(n-1) + fib(n-2)
+
+fib(10)
+            </input>
+            <output>
+55
+            </output>
+          </sage>
+    </p>
+  </subsection>
+
 
   <conclusion>
     <p>
