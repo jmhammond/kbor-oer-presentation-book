@@ -25,7 +25,7 @@ As a $\LaTeX$ pdf, use:
 ``` bash
 pretext build pdf
 ```
-You can then either open the PDF in your file browser, or use `pretext view pdf` to view the pdf in your browser.
+You can then either open the PDF (which you find in the `output/pdf/` folder) in your file browser, or use `pretext view pdf` to view the pdf in your browser.
 
 
 ### Additional build options
