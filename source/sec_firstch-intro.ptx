@@ -109,7 +109,7 @@
     </p>
 
     <p>
-      Math is rendered using MathJax and can accept arbitrarily complex <m>\LaTeX</m> expressions. Here's a gnarly one:
+      Math is rendered using MathJax on the web (and just plain latex when building a PDF) and can accept arbitrarily complex <m>\LaTeX</m> expressions. Here's a gnarly one:
       <md>
         <mrow>
           \left\langle x^{\prime}, t^{\prime} \mid x_{0}, t_{0}\right\rangle \amp;= \lim _{N \rightarrow \infty} \int d x_{1} \cdots \int d x_{N-1} \int \frac{d p_{1}}{2 \pi \hbar} \ldots
@@ -169,10 +169,43 @@ fib(10)
   </subsection>
 
 
-  <conclusion>
+  <subsection>
+    <title>Videos and such</title>
     <p>
-      After the last subsection, you might have a conclusion.
+      Want to embed youtube videos? You can use the <c>video</c> tag and specific <c>youtube</c> attribute!
     </p>
-  </conclusion>
-</section>
+    <note>
+      <p>
+        In my book, I included video answers to each example for the "true flipped" hybrid experience. It's worked pretty well!
+      </p>
+    </note>
 
+    <example>
+      <statement>
+        <p>
+          Please watch the following video and answer the following questions.
+          <video youtube="dQw4w9WgXcQ" width="50%"/>
+        </p>
+        <ol>
+          <li> Will I ever give you up? </li>
+          <li> Will I ever let you down? </li>
+          <li> Will I ever run around and desert you? </li>
+        </ol>
+        <solution>
+          <p>
+            <ol>
+              <li> No </li>
+              <li> No </li>
+              <li> No </li>
+            </ol>
+            I just wanna tell you how I'm feeling. Gotta make you understand.
+          </p>
+        </solution>
+      </statement>
+    </example>
+
+    <p>
+      You can also embed other content like audio. There's a <url href="http://musictheory.pugetsound.edu/mt21c/TheMajorScale.html">music book written in PreText</url> that embeds audio so you can hear what they're discussing.
+    </p>
+  </subsection>
+</section>
