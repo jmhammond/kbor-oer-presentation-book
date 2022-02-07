@@ -1,10 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <chapter xml:id="ch-empty" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter the Second</title>
+  <title>Blank Chapter</title>
   <introduction>
-    <p></p>
+    <p>This chapter is just empty</p>
   </introduction>
+  <section>
+    <title>just want to make</title>
+  </section>
+  <section>
+    <title>the table of contents</title>
+  </section>
+  <section>
+    <title>look bigger </title>
+  </section>
 
 
   <!--
