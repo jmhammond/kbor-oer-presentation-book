@@ -15,8 +15,8 @@
 
   <colophon>
     <website>
-      <name><c>wichita.edu/discretebook</c></name>
-      <address>http://my.website.org</address>
+      <name><c>http://hammond.math.wichita.edu/kbor-oer/</c></name>
+      <address>http://hammond.math.wichita.edu/kbor-oer/</address>
     </website>
 
     <copyright>
@@ -39,7 +39,9 @@
     <p>
       I would like to thank everyone attending the talk and exploring the source. Welcome to writing your own book!
     </p>
-
+    <p>
+      And thanks to the <url href="https://loremipsum.io/generator">Ipsum Generator</url> for all the fun filler Latin text.
+    </p>
   </acknowledgement>
 
   <preface xml:id="preface">
