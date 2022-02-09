@@ -52,12 +52,12 @@
         <program language="python">
           <input>
             def fib(n):
-                if n == 0:
-                     return 0
-                elif n == 1:
-                     return 1
-                else:
-                     return fib(n-1) + fib(n-2)
+            if n == 0:
+            return 0
+            elif n == 1:
+            return 1
+            else:
+            return fib(n-1) + fib(n-2)
           </input>
         </program>
         <p>
@@ -156,20 +156,20 @@
     <p>
       <sage>
         <input>
-def fib(n):
-    if n == 0:
-         return 0
-    elif n == 1:
-         return 1
-    else:
-         return fib(n-1) + fib(n-2)
+          def fib(n):
+          if n == 0:
+          return 0
+          elif n == 1:
+          return 1
+          else:
+          return fib(n-1) + fib(n-2)
 
-fib(10)
-            </input>
-            <output>
-55
-            </output>
-          </sage>
+          fib(10)
+        </input>
+        <output>
+          55
+        </output>
+      </sage>
     </p>
   </subsection>
 
@@ -222,40 +222,40 @@ fib(10)
           <image xml:id="tikz-ex-network-flow" width="50%">
             <description>A really involved network diagram.</description>
             <latex-image>
-\begin{tikzpicture}[%
-  every node/.style={draw,fill=gray!40,circle,minimum size=18pt,font=\footnotesize},
-  node distance=3cm,on grid]
-  % the vertices
-  \node[label=left:Source] (source) at (0,0) {1};
-  \node[right=of source] (three) {3};
-  \node[above=of three] (two) {2};
-  \node[below=of three] (four) {4};
-  \node[right=of source] (three) {3};
-  \node[right=of three] (six) {6};
-  \node[above=of six] (five) {5};
-  \node[below=of six] (seven) {7};
-  \node[right=of six,label=right:Sink] (sink) {8};
-  \node at (1.9,1) (sfive) {$5^*$};
-  \node at (4.5,1) (sseven) {$7^*$};
-  \node at (7.1,1) (ssix) {$6^*$};
-  \node at (1.9,-1) (sthree) {$3^*$};
-  \node at (4.5,-1) (stwo) {$2^*$};
-  \node at (7.1,-1) (sfour) {$4^*$};
-  \node at (4.5,4) (seight) {$8^*$};
-  \node at (4.5,-4) (sone) {$1^*$};
-  % the edges
-  \draw (source) -- (two) -- (five) -- (sink) -- (seven) -- (four) -- (source) -- (three) -- (six) -- (sink);
-  \draw (two) -- (three) -- (four);
-  \draw (five) -- (six) -- (seven);
-  \begin{scope}[dashed]
-  \draw (sfive) -- (sseven) -- (ssix) -- (sfour) -- (stwo) -- (sthree) -- (sfive);
-  \draw (sthree) to [bend right=55] (sone);
-  \draw (sfour) to [bend left=55] (sone);
-  \draw (sfive) to [bend left=55] (seight);
-  \draw (ssix) to [bend right=55] (seight);
-  \draw (source) ..  controls (1,-6.5) and (8,-6.5) .. node[draw=none, fill=none,label=above:$s^*$] {} (sink);
-  \end{scope}
-\end{tikzpicture}
+              \begin{tikzpicture}[%
+              every node/.style={draw,fill=gray!40,circle,minimum size=18pt,font=\footnotesize},
+              node distance=3cm,on grid]
+              % the vertices
+              \node[label=left:Source] (source) at (0,0) {1};
+              \node[right=of source] (three) {3};
+              \node[above=of three] (two) {2};
+              \node[below=of three] (four) {4};
+              \node[right=of source] (three) {3};
+              \node[right=of three] (six) {6};
+              \node[above=of six] (five) {5};
+              \node[below=of six] (seven) {7};
+              \node[right=of six,label=right:Sink] (sink) {8};
+              \node at (1.9,1) (sfive) {$5^*$};
+              \node at (4.5,1) (sseven) {$7^*$};
+              \node at (7.1,1) (ssix) {$6^*$};
+              \node at (1.9,-1) (sthree) {$3^*$};
+              \node at (4.5,-1) (stwo) {$2^*$};
+              \node at (7.1,-1) (sfour) {$4^*$};
+              \node at (4.5,4) (seight) {$8^*$};
+              \node at (4.5,-4) (sone) {$1^*$};
+              % the edges
+              \draw (source) -- (two) -- (five) -- (sink) -- (seven) -- (four) -- (source) -- (three) -- (six) -- (sink);
+              \draw (two) -- (three) -- (four);
+              \draw (five) -- (six) -- (seven);
+              \begin{scope}[dashed]
+              \draw (sfive) -- (sseven) -- (ssix) -- (sfour) -- (stwo) -- (sthree) -- (sfive);
+              \draw (sthree) to [bend right=55] (sone);
+              \draw (sfour) to [bend left=55] (sone);
+              \draw (sfive) to [bend left=55] (seight);
+              \draw (ssix) to [bend right=55] (seight);
+              \draw (source) ..  controls (1,-6.5) and (8,-6.5) .. node[draw=none, fill=none,label=above:$s^*$] {} (sink);
+              \end{scope}
+              \end{tikzpicture}
             </latex-image>
           </image>
         </p>
