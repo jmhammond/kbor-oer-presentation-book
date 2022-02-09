@@ -218,6 +218,81 @@ fib(10)
     <exercise>
       <statement>
         <p>
+          Find the maximal flow for the following network:
+          <image xml:id="tikz-ex-network-flow" width="50%">
+            <description>A really involved network diagram.</description>
+            <latex-image>
+\begin{tikzpicture}[%
+  every node/.style={draw,fill=gray!40,circle,minimum size=18pt,font=\footnotesize},
+  node distance=3cm,on grid]
+  % the vertices
+  \node[label=left:Source] (source) at (0,0) {1};
+  \node[right=of source] (three) {3};
+  \node[above=of three] (two) {2};
+  \node[below=of three] (four) {4};
+  \node[right=of source] (three) {3};
+  \node[right=of three] (six) {6};
+  \node[above=of six] (five) {5};
+  \node[below=of six] (seven) {7};
+  \node[right=of six,label=right:Sink] (sink) {8};
+  \node at (1.9,1) (sfive) {$5^*$};
+  \node at (4.5,1) (sseven) {$7^*$};
+  \node at (7.1,1) (ssix) {$6^*$};
+  \node at (1.9,-1) (sthree) {$3^*$};
+  \node at (4.5,-1) (stwo) {$2^*$};
+  \node at (7.1,-1) (sfour) {$4^*$};
+  \node at (4.5,4) (seight) {$8^*$};
+  \node at (4.5,-4) (sone) {$1^*$};
+  % the edges
+  \draw (source) -- (two) -- (five) -- (sink) -- (seven) -- (four) -- (source) -- (three) -- (six) -- (sink);
+  \draw (two) -- (three) -- (four);
+  \draw (five) -- (six) -- (seven);
+  \begin{scope}[dashed]
+  \draw (sfive) -- (sseven) -- (ssix) -- (sfour) -- (stwo) -- (sthree) -- (sfive);
+  \draw (sthree) to [bend right=55] (sone);
+  \draw (sfour) to [bend left=55] (sone);
+  \draw (sfive) to [bend left=55] (seight);
+  \draw (ssix) to [bend right=55] (seight);
+  \draw (source) ..  controls (1,-6.5) and (8,-6.5) .. node[draw=none, fill=none,label=above:$s^*$] {} (sink);
+  \end{scope}
+\end{tikzpicture}
+            </latex-image>
+          </image>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Draw (by hand) <m>K_{16}</m>, the complete graph with 16 nodes. Hint - you need 120 edges.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Does your's look like
+          <image xml:id="tikz-ex-complete-16" width="50%">
+            <description>Complete graph of 16 nodes</description>
+            <latex-image>
+              \begin{tikzpicture}[transform shape,line width=0.2pt]
+              \foreach \x in {1,...,16}{%
+              \pgfmathparse{(\x-1)*45+floor(\x/9)*22.5}
+              \node[draw,circle,inner sep=0.25cm] (N-\x) at (\pgfmathresult:5.4cm) [thick] {};
+              }
+              \foreach \x [count=\xi from 1] in {2,...,16}{%
+              \foreach \y in {\x,...,16}{%
+              \path (N-\xi) edge[-] (N-\y);
+              }
+              }
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          If so, great job!
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
           Is this an exercise?
         </p>
       </statement>

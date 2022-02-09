@@ -8,6 +8,8 @@ A live version of this book is residing (at least temporarily) [on my website](h
 
 ## Building the Book:
 
+In order to generate the `tikz` graphs, you need to, at least once, run `pretext build html -d`. The `-d` flag tells PreText to build the **d**iagrams from the LaTeX code.
+
 ### HTML 
 
 To build the book as an interative webpage, run:
@@ -22,6 +24,13 @@ followed by
 pretext view html
 ```
 
+If you want pretext to keep looking for changes and update the webpages automatically, instead run 
+
+``` bash
+pretext view html --watch
+```
+
+
 ### PDF 
 
 As a $\LaTeX$ pdf, use:
@@ -31,6 +40,7 @@ pretext build pdf
 ```
 You can then either open the PDF (which you find in the `output/pdf/` folder) in your file browser, or use `pretext view pdf` to view the pdf in your browser.
 
+Note that you don't need to specify latex to build diagrams, because latex knows how to handle the tikz diagrams automatically.
 
 ### Additional build options
 
