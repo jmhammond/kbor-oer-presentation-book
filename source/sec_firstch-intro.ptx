@@ -19,10 +19,10 @@
     <definition>
       <statement>
         <p>
-          <term>Open educational resources (OER)</term>, according to <url href="https://en.unesco.org/themes/building-knowledge-societies/oer">UNESCO</url>, <q>are teaching, learning and research materials in any medium – digital or otherwise – that reside in the public domain or have been released under an open license that permits no-cost access, use, adaptation and redistribution by others with no or limited restrictions.</q> That is, OER include built in permission to retain, reuse, revise, remix, and redistribute the material.
+          <term>Open educational resources (OER)</term>, according to <url href="https://en.unesco.org/themes/building-knowledge-societies/oer" visual="unesco.org/themes/building-knowledge-societies/oer">UNESCO</url>, <q>are teaching, learning and research materials in any medium – digital or otherwise – that reside in the public domain or have been released under an open license that permits no-cost access, use, adaptation and redistribution by others with no or limited restrictions.</q> That is, OER include built in permission to retain, reuse, revise, remix, and redistribute the material.
         </p>
         <p>
-          This definition comes from the <url href="https://www.kansasregents.org/academic_affairs/open-educational-resources/oer-conference">KBOR OER Summit webpage</url>.
+          This definition comes from the <url href="https://www.kansasregents.org/academic_affairs/open-educational-resources/oer-conference" visual="https://www.kansasregents.org/academic_affairs/open-educational-resources/oer-conference">KBOR OER Summit webpage</url>.
         </p>
       </statement>
     </definition>
@@ -210,7 +210,7 @@
     </example>
 
     <p>
-      You can also embed other content like audio. There's a <url href="http://musictheory.pugetsound.edu/mt21c/TheMajorScale.html">music book written in PreText</url> that embeds audio so you can hear what they're discussing.
+      You can also embed other content like audio. There's a <url href="http://musictheory.pugetsound.edu/mt21c/TheMajorScale.html" visual="musictheory.pugetsound.edu">music book written in PreText</url> that embeds audio so you can hear what they're discussing.
     </p>
   </subsection>
 

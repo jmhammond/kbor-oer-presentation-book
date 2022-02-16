@@ -23,12 +23,12 @@
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2020<ndash/>2021</year>
+      <year>2022</year>
       <holder>John Hammond</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by-sa/4.0/</url>
+        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0">http://creativecommons.org/licenses/by-sa/4.0/</url>
       </shortlicense>
 
     </copyright>
@@ -40,7 +40,7 @@
       I would like to thank everyone attending the talk and exploring the source. Welcome to writing your own book!
     </p>
     <p>
-      And thanks to the <url href="https://loremipsum.io/generator">Ipsum Generator</url> for all the fun filler Latin text.
+      And thanks to the <url href="https://loremipsum.io/generator" visual="loremipsum.or">Ipsum Generator</url> for all the fun filler Latin text.
     </p>
   </acknowledgement>
 

@@ -43,6 +43,9 @@
   <latex print="no" sides="one">
     <asymptote links="no"/>
   </latex>
+
+  <epub cover="../assets/sample-cover.png">
+  </epub>
   
   <html>
     <!-- Whether to knowl a particular elements is set here    -->

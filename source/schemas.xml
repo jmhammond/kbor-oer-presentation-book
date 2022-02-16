@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="ch_first-chapter.ptx" uri="../../mathbook/schema/pretext.rnc"/>
+</locatingRules>
